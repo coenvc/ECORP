@@ -52,11 +52,12 @@ create table Afdeling(
 	);
 create table Medewerker(
 	ID int identity(1,1) primary key not null,
-	RolId int,
+	RolId int, 
+	Telefoonnummer int,
 	Naam varchar,
 	Achternaam varchar,
 	Email varchar unique,
-	Salaris int,
+	Salaris money,
 	AdresId int,
 	Afdeling int,
 
