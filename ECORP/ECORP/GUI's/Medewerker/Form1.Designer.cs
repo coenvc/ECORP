@@ -48,17 +48,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Opties = new System.Windows.Forms.GroupBox();
-            this.rbDelete = new System.Windows.Forms.RadioButton();
-            this.Update = new System.Windows.Forms.RadioButton();
-            this.rbCreate = new System.Windows.Forms.RadioButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.tbRol = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tbTelefoonnummer = new System.Windows.Forms.TextBox();
             this.Telefoonnummer = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
-            this.Opties.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbNaam
@@ -222,51 +217,6 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Huisnummer";
             // 
-            // Opties
-            // 
-            this.Opties.Controls.Add(this.rbDelete);
-            this.Opties.Controls.Add(this.Update);
-            this.Opties.Controls.Add(this.rbCreate);
-            this.Opties.Location = new System.Drawing.Point(253, 42);
-            this.Opties.Name = "Opties";
-            this.Opties.Size = new System.Drawing.Size(592, 97);
-            this.Opties.TabIndex = 22;
-            this.Opties.TabStop = false;
-            this.Opties.Text = "Opties";
-            // 
-            // rbDelete
-            // 
-            this.rbDelete.AutoSize = true;
-            this.rbDelete.Location = new System.Drawing.Point(6, 66);
-            this.rbDelete.Name = "rbDelete";
-            this.rbDelete.Size = new System.Drawing.Size(56, 17);
-            this.rbDelete.TabIndex = 2;
-            this.rbDelete.TabStop = true;
-            this.rbDelete.Text = "Delete";
-            this.rbDelete.UseVisualStyleBackColor = true;
-            // 
-            // Update
-            // 
-            this.Update.AutoSize = true;
-            this.Update.Location = new System.Drawing.Point(6, 43);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(60, 17);
-            this.Update.TabIndex = 1;
-            this.Update.TabStop = true;
-            this.Update.Text = "Update";
-            this.Update.UseVisualStyleBackColor = true;
-            // 
-            // rbCreate
-            // 
-            this.rbCreate.AutoSize = true;
-            this.rbCreate.Location = new System.Drawing.Point(7, 20);
-            this.rbCreate.Name = "rbCreate";
-            this.rbCreate.Size = new System.Drawing.Size(56, 17);
-            this.rbCreate.TabIndex = 0;
-            this.rbCreate.TabStop = true;
-            this.rbCreate.Text = "Create";
-            this.rbCreate.UseVisualStyleBackColor = true;
-            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(344, 323);
@@ -330,7 +280,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tbRol);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.Opties);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -353,8 +302,6 @@
             this.Controls.Add(this.tbNaam);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Opties.ResumeLayout(false);
-            this.Opties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,10 +329,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox Opties;
-        private System.Windows.Forms.RadioButton rbDelete;
-        private System.Windows.Forms.RadioButton Update;
-        private System.Windows.Forms.RadioButton rbCreate;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox tbRol;
         private System.Windows.Forms.Label label9;

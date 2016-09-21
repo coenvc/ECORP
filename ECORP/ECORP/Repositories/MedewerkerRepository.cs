@@ -17,6 +17,8 @@ namespace ECORP
 
          public static List<Medewerker> medewerkers = new List<Medewerker>();
 
+        
+
         public Medewerker getMedewerkerById(int id)
         {
             Medewerker mw = null;
@@ -68,6 +70,7 @@ namespace ECORP
             Id++;
             m.ID = Id;
             medewerkers.Add(m);
+
         }
 
         public void DeleteMedewerker(Medewerker m)
@@ -94,6 +97,7 @@ namespace ECORP
             {
                 if (m.ID == medewerker.ID)
                 {
+                    newMedewerker.ID = m.ID;
                     medewerkers.Remove(m);
                     medewerkers.Add(newMedewerker);
                 }

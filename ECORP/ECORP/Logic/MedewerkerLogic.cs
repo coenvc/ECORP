@@ -31,6 +31,11 @@ namespace ECORP
             mwr.DeleteMedewerker(m);
         }
 
+        public void UpdateMedewerker(Medewerker m, Medewerker nm)
+        {
+            mwr.UPdateMedewerker(m, nm);
+        }
+
 
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ECORP.GUI_s.Medewerker;
 
 
 namespace ECORP.GUI_s
@@ -42,7 +43,17 @@ namespace ECORP.GUI_s
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
-            f1.Hide();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            ECORP.Medewerker m = lbMedewerkers.SelectedItem as ECORP.Medewerker;
+            UpdateMedewerker umw = new UpdateMedewerker(m);
+            umw.Show();
+            this.Hide(); 
+
         }
     }
 }

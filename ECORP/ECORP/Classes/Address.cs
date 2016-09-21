@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECORP
 {
-    class Address
+    public class Address
     { 
         public string Straatnaam { get; private set; } 
         public string Woonplaats { get; private set; } 

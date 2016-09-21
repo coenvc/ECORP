@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ECORP.GUI_s.Magazijn;
 
 namespace ECORP
 {
@@ -16,7 +17,7 @@ namespace ECORP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Magazijn());
         }
     }
 }

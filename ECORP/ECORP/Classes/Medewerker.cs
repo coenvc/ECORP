@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECORP
 {
-    class Medewerker
+    public class Medewerker
     {  
         public int ID { get; set; }
         public string Rol { get; private set; } 
