@@ -8,7 +8,13 @@ namespace ECORP
 {
     class MedewerkerLogic
     {
-        MedewerkerRepository mwr = new MedewerkerRepository();
+     
+        private IMedewerkerRepository mwr;
+
+        public MedewerkerLogic(IMedewerkerRepository mr)
+        {
+            this.mwr = mr;
+        }
 
         public void InsertMedewerker(Medewerker m)
         {
@@ -25,9 +31,6 @@ namespace ECORP
             mwr.DeleteMedewerker(m);
         }
 
-        public void Log()
-        {
-            mwr.Log();
-        }
+
     }
 }

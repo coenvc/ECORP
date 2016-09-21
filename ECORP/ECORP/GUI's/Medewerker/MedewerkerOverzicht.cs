@@ -13,16 +13,18 @@ namespace ECORP.GUI_s
 {
     public partial class MedewerkerOverzicht : Form
     {
-        MedewerkerLogic mwl = new MedewerkerLogic();
+
+        MedewerkerLogic mwl = new MedewerkerLogic(new MedewerkerRepository());
         public MedewerkerOverzicht()
         {
+           
             InitializeComponent();
             Update();
         }
 
         private void btnVerwijderen_Click(object sender, EventArgs e)
         {
-            Medewerker m = lbMedewerkers.SelectedItem as Medewerker;
+            ECORP.Medewerker m = lbMedewerkers.SelectedItem as ECORP.Medewerker;
             mwl.RemoveMedewerker(m);
             MessageBox.Show("De medewerker is verwijderd");
             Update();
@@ -31,10 +33,16 @@ namespace ECORP.GUI_s
         private void Update()
         {
             lbMedewerkers.Items.Clear();
-            foreach (Medewerker m in mwl.GetAllMedewerkers())
+            foreach (ECORP.Medewerker m in mwl.GetAllMedewerkers())
             {
                 lbMedewerkers.Items.Add(m);
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Hide();
         }
     }
 }

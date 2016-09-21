@@ -13,7 +13,8 @@ namespace ECORP
 {
     public partial class Form1 : Form
     {
-        private MedewerkerLogic mwl = new MedewerkerLogic();
+        private IMedewerkerRepository p = new MedewerkerRepository();
+        private MedewerkerLogic mwl = new MedewerkerLogic(p);
         public Form1()
         {
             InitializeComponent();

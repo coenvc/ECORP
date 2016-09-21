@@ -54,17 +54,23 @@
     <Compile Include="Classes\Address.cs" />
     <Compile Include="Classes\Afdeling.cs" />
     <Compile Include="Classes\Bericht.cs" />
-    <Compile Include="GUI%27s\Form1.cs">
+    <Compile Include="GUI%27s\Medewerker\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI%27s\Form1.Designer.cs">
+    <Compile Include="GUI%27s\Medewerker\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI%27s\MedewerkerOverzicht.cs">
+    <Compile Include="GUI%27s\Medewerker\MedewerkerOverzicht.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI%27s\MedewerkerOverzicht.Designer.cs">
+    <Compile Include="GUI%27s\Medewerker\MedewerkerOverzicht.Designer.cs">
       <DependentUpon>MedewerkerOverzicht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI%27s\Medewerker\UpdateMedewerker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI%27s\Medewerker\UpdateMedewerker.Designer.cs">
+      <DependentUpon>UpdateMedewerker.cs</DependentUpon>
     </Compile>
     <Compile Include="RepositoryInterfaces\IMedewerkerRepository.cs" />
     <Compile Include="Classes\Medewerker.cs" />
@@ -72,10 +78,10 @@
     <Compile Include="Repositories\MedewerkerRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI%27s\Form1.resx">
+    <EmbeddedResource Include="GUI%27s\Medewerker\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI%27s\MedewerkerOverzicht.resx">
+    <EmbeddedResource Include="GUI%27s\Medewerker\MedewerkerOverzicht.resx">
       <DependentUpon>MedewerkerOverzicht.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
